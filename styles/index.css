@@ -13,6 +13,11 @@
     margin-right: 320px;
 }
 
+.header-links{
+    display: flex;
+    gap: 25px;
+}
+
 .header-link{
     font-size: 24px;
     text-decoration: none;
@@ -25,7 +30,13 @@
     border-radius: 12px;
     width: 280px;
     height: 80px;
-    background: none;
+    background: white;
+    border: 2px solid black;
+    transition: filter 0.3s ease-in-out;
+}
+
+.header-button:hover{
+    filter: invert(1);
 }
 
 .introdution{
@@ -52,8 +63,14 @@
     font-size: 28px;
     font-family: "Space Grotesk";
     border-radius: 12px;
+    border: 2px solid black;
     color: white;
     background-color: black;
+    transition: filter 0.3s ease-in-out;
+}
+
+.introdution-left-button:hover{
+    filter: invert(1);
 }
 
 .introdution-right-image{
@@ -93,7 +110,7 @@ p {
     font-weight: 400;
 }
 
-@media only screen and (max-width : 1200px) {
+@media (max-width : 1200px) {
 	.header{
         flex-direction: column;
         align-items: flex-start;
@@ -164,7 +181,7 @@ p {
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .header {
         flex-direction: column;
         align-items: center; 
